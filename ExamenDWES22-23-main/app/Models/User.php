@@ -28,6 +28,11 @@ class User extends Authenticatable
         'role_id',
     ];
 
+    public function viajes()
+{
+return $this->belongsToMany('App\Models\Trip');
+}
+
 
     /**
      * The attributes that should be hidden for arrays.

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Trip extends Model
 {
     use HasFactory;
+
+    public function usuarios()
+    {
+    return $this->belongsToMany('App\Models\User');
+    }
 }

@@ -65,11 +65,11 @@
 
           @if(auth()->check())
             @if(auth()->user()->role_id==2)
-              <a href="#">@lang('messages.administration')</a>
+              <a href="/admin">@lang('messages.administration')</a>
               @endif
               @endif
               <a href="#">@lang('messages.trip_driver')</a>
-              <a href="/">@lang('messages.future_trips')</a>
+              <a href="/viajes">@lang('messages.future_trips')</a>
               <a href="/">@lang('messages.middleware')</a>
           </div>
           <hr><br><br>

@@ -26,4 +26,14 @@ class UserController extends Controller
 
         return redirect('/viajes');
     }
+
+    public function mostrar_viaje_conductor()
+    {
+        $viajes= Trip::all();
+        $conductor= Driver::all();
+
+        
+
+        return view('viaje-conductor')->with([ 'viaje'=>$viajes, 'conductor'=>$conductor]);
+    }
 }

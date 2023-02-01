@@ -68,9 +68,9 @@
               <a href="/admin">@lang('messages.administration')</a>
               @endif
               @endif
-              <a href="#">@lang('messages.trip_driver')</a>
+              <a href="/viaje-conductor"">@lang('messages.trip_driver')</a>
               <a href="/viajes">@lang('messages.future_trips')</a>
-              <a href="/">@lang('messages.middleware')</a>
+              <a href="#">@lang('messages.middleware')</a>
           </div>
           <hr><br><br>
 					<div class="op">

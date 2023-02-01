@@ -25,4 +25,7 @@ Route::get('/admin', [AdminController::class, 'mostrar'])->name('admin')->middle
 
 Route::get('/viajes', [UserController::class, 'mostrar'])->name('viajes')->middleware('auth');
 
-Route::put('/reservar', [UserController::class, 'reservar'])->name('reservar')->middleware('auth');
+Route::put('/reservar/{$id}', [UserController::class, 'reservar'])->name('reservar')->middleware('auth');
+
+Route::get('/viaje-conductor', [UserController::class, 'mostrar_viaje_conductor'])->name('viaje-conductor')->middleware('auth');
+
